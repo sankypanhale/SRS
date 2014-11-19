@@ -33,5 +33,5 @@ create table enrollments (sid char(4) references students, classid char(5) refer
 lgrade char check (lgrade in ('A', 'B', 'C', 'D', 'F', 'I', null)), primary key (sid, classid));
 
 create table logs (logid number(4) primary key, who varchar2(10) not null, time date not null,
-table_name varchar2(20) not null, operation varchar2(6) not null, key_value varchar2(4));
+table_name varchar2(20) not null, operation varchar2(6) not null, key_value varchar2(10));
 
