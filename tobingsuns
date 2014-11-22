@@ -1,0 +1,4 @@
+#!/bin/bash
+scp $1 spanhal1@bingsuns.cc.binghamton.edu:/u0/users/2/spanhal1/DB2/
+echo "$1 copied to bingsuns"
+
