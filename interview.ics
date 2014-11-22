@@ -1,0 +1,96 @@
+BEGIN:VCALENDAR
+PRODID:-//HireVue Inc//HireVue Live Interview Request//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20141114T160000Z
+DTEND:20141114T170000Z
+DTSTAMP:20141106T220603Z
+CREATED:20141106T220603Z
+ORGANIZER;CN=Megan Flaxbeard
+ :mailto:megan.flaxbeard@cerner.com
+ATTENDEE;
+ CUTYPE=INDIVIDUAL;
+ ROLE=REQ-PARTICIPANT;
+ PARTSTAT=NEEDS-ACTION;
+ RSVP=TRUE;
+ CN=Campus 
+ calendar
+ :MAILTO:camprecruit@cerner.com
+
+ATTENDEE;
+ CUTYPE=INDIVIDUAL;
+ ROLE=REQ-PARTICIPANT;
+ PARTSTAT=NEEDS-ACTION;
+ RSVP=TRUE;
+ CN=T.G. 
+ Frame
+ :MAILTO:t.g.frame@cerner.com
+
+ATTENDEE;
+ CUTYPE=INDIVIDUAL;
+ ROLE=REQ-PARTICIPANT;
+ PARTSTAT=NEEDS-ACTION;
+ RSVP=TRUE;
+ CN=Richard 
+ Martin
+ :MAILTO:richard.martin@cerner.com
+
+ATTENDEE;
+ CUTYPE=INDIVIDUAL;
+ ROLE=REQ-PARTICIPANT;
+ PARTSTAT=NEEDS-ACTION;
+ RSVP=TRUE;
+ CN=Chaitanya 
+ Bhasme
+ :MAILTO:cbhasme1@binghamton.edu
+
+
+
+UID:d06163cd8e088c973d6d22698137d679@hirevue.com
+SUMMARY:Live Interview for 5581BR Academy Software Enginee
+ r with Megan Flaxbeard
+DESCRIPTION:Interview with Cerner\n\nDear  Chaitanya,\n\nYou g
+ ot the interview!\n\nCerner would like you to part
+ icipate in a digital interview, powered by HireVue
+ . This is a live non-recorded interview scheduled 
+ for November 14, 2014 at 10 AM, CST.\n\nJob Title:
+  5581BR Academy Software Engineer\n\nStart Intervi
+ ew Setup: https://cerner.hirevue.com/interviews/Pz
+ birab-4rmd77/candidate/\n\nFeel free to enter the 
+ Interview Room at any time before your scheduled t
+ ime to check your audio and video settings.\n\nWha
+ t is digital interviewing?\n\nDigital interviewing
+  is a modern, new way to interview. You will be jo
+ ining the live interview using your computer and w
+ ebcam.\n\nWe think you’ll find the digital intervi
+ ew a great experience - here is why:\n\nConvenienc
+ e - We're bringing the interview to you. Interview
+  the candidate anywhere that's most convenient for
+  you.\n\nMore Exposure Across Cerner - The digital
+  interview can be shared across several teams at C
+ erner, giving the candidate the chance to reach mo
+ re managers.\n\nPlease review the following suppor
+ t tools before beginning the interview.\n\nUser In
+ structions and Resources: http://hirevue.force.com
+ /E2user\n\nPC/Mac Requirements:\n  - Adobe Flash 1
+ 1\n  - Webcam\n\nIf you have any problems during y
+ our interview please contact HireVue anytime 24/7\
+ n\nCustomer Success Website: http://hirevue.force.
+ com/E2user\n1-800-655-4106 (U.S.)\n001-801-316-291
+ 0 (Non-U.S.)\nsupport@hirevue.com\n\nGood luck!\n\
+ nCerner\n
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+PRIORITY:5
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR
+
