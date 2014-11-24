@@ -13,10 +13,17 @@ p_email in students.email%type)is
 	invalid_lastname exception;
 	invalid_status exception;
 	invalid_email exception;
+	invalid_sid1 exception;
 	emailcount number(2);
+	sidcount number(2);
 begin
+
 emailcount := 0;
+sidcount := 0;
+
 select count(*) into emailcount from students where email = p_email;
+select count(*) into sidcount from students where sid = p_sid;
+
 if(p_gpa < 0 or p_gpa > 4) then
 	raise invalid_gpa;
 elsif(p_sid not like 'B%') then
@@ -29,6 +36,8 @@ elsif(p_status not in ('freshman','sophomore','junior','senior','graduate')) the
 	raise invalid_status;
 elsif(emailcount > 0) then
 	raise invalid_email;
+elsif(sidcount > 0) then
+	raise invalid_sid1;
 else
 	insert into students values (p_sid,p_firstname,p_lastname,p_status,p_gpa,p_email);
 end if;
@@ -46,6 +55,8 @@ exception
 		dbms_output.put_line('status value must be freshman,sophomore,junior,senior,graduate');
 	when invalid_email then
 		dbms_output.put_line('email value is not unique.');
+	when invalid_sid1 then
+		dbms_output.put_line('sid value is not unique.');
 end;
 /
 show error
