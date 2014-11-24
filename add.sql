@@ -17,6 +17,7 @@ insert into courses values ('CS', 552, 'operating systems');
 insert into courses values ('BIOL', 425, 'molecular biology');
 insert into courses values ('CS', 575, 'Algorithms');
 insert into courses values ('CS', 375, 'Algorithms');
+insert into courses values ('CS', 140, 'Computer Fundaments');
 
 insert into prerequisites values ('Math', 314, 'Math', 221);
 insert into prerequisites values ('Math', 421, 'Math', 221);
@@ -25,6 +26,8 @@ insert into prerequisites values ('CS', 432, 'CS', 240);
 insert into prerequisites values ('CS', 552, 'CS', 240);
 insert into prerequisites values ('CS', 375, 'CS', 240);
 insert into prerequisites values ('CS', 575, 'CS', 375);
+insert into prerequisites values ('CS', 240, 'CS', 140);
+insert into prerequisites values ('CS', 575, 'Math', 314);
 
 
 insert into classes values  ('c0001', 'CS', 432, 1, 2014, 'Spring', 35, 34);
@@ -49,4 +52,5 @@ insert into enrollments values  ('B001', 'c0003', 'B');
 insert into enrollments values  ('B001', 'c0006', 'B');
 insert into enrollments values  ('B001', 'c0004', 'A');
 insert into enrollments values  ('B001', 'c0005', 'B');
+insert into enrollments values  ('B002', 'c0005', 'B');
 
