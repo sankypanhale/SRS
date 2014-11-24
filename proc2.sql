@@ -30,6 +30,7 @@ begin
 	close cou_cursor;
 end;
 /
+
 create or replace procedure show_prereq is 
 cursor pre_cursor is select * from prerequisites;
 p_rec pre_cursor%rowtype;
@@ -45,6 +46,7 @@ begin
 	close pre_cursor;
 end;
 /
+
 create or replace procedure show_classes is 
 cursor cla_cursor is select * from classes;
 c_rec cla_cursor%rowtype;
@@ -60,6 +62,7 @@ begin
 	close cla_cursor;
 end;
 /
+
 create or replace procedure show_enrollments is 
 cursor enrol_cursor is select * from enrollments;
 e_rec enrol_cursor%rowtype;
@@ -73,6 +76,22 @@ begin
 		fetch enrol_cursor into e_rec;
 	end loop;
 	close enrol_cursor;
+end;
+/
+
+create or replace procedure show_logs is 
+cursor log_cursor is select * from logs;
+log_rec log_cursor%rowtype;
+begin
+	if(not log_cursor%isopen) then
+		open log_cursor;
+	end if;
+	fetch log_cursor into log_rec;
+	while(log_cursor%found) loop
+		dbms_output.put_line(log_rec.logid||','||log_rec.who||','||log_rec.time||','||log_rec.table_name||','||log_rec.operation||','||log_rec.key_value);
+		fetch log_cursor into log_rec;
+	end loop;
+	close log_cursor;
 end;
 /
 show errors;
