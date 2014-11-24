@@ -1,3 +1,8 @@
 #!/bin/bash
-scp cbhasme1@bingsuns.binghamton.edu:/u0/users/5/cbhasme1/GitHub/SRS/$1 .
-echo "File copied $1"
+
+if [ $2 = "spanhal1" ]; then
+	scp spanhal1@bingsuns.binghamton.edu:/u0/users/2/spanhal1/DB2/$1 .
+else
+	scp cbhasme1@bingsuns.binghamton.edu:/u0/users/5/cbhasme1/GitHub/SRS/$1 .
+fi
+echo "File copied $1 to $2"

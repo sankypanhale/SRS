@@ -1,4 +1,9 @@
 #!/bin/bash
-scp $1 cbhasme1@bingsuns.cc.binghamton.edu:/u0/users/5/cbhasme1/GitHub/SRS/
-echo "$1 copied to bingsuns"
+
+if [ $2 = "spanhal1" ]; then
+	scp $1 spanhal1@bingsuns.binghamton.edu:/u0/users/2/spanhal1/DB2/
+else
+	scp $1 cbhasme1@bingsuns.cc.binghamton.edu:/u0/users/5/cbhasme1/GitHub/SRS/
+fi
+echo "$1 copied to bingsuns in $2 account"
 
