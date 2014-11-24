@@ -1,3 +1,3 @@
 #!/bin/bash
-scp spanhal1@bingsuns.binghamton.edu:/u0/users/2/spanhal1/DB2/$1 /home/spanhal1/Documents/DB2/SRS
+scp cbhasme1@bingsuns.binghamton.edu:/u0/users/5/cbhasme1/GitHub/SRS/$1 .
 echo "File copied $1"
