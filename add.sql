@@ -30,13 +30,14 @@ insert into prerequisites values ('CS', 240, 'CS', 140);
 insert into prerequisites values ('CS', 575, 'Math', 314);
 
 
-insert into classes values  ('c0001', 'CS', 432, 1, 2014, 'Spring', 35, 34);
-insert into classes values  ('c0002', 'Math', 314, 1, 2013, 'Fall', 25, 24);
-insert into classes values  ('c0003', 'Math', 314, 2, 2013, 'Fall', 25, 22);
-insert into classes values  ('c0004', 'CS', 432, 1, 2013, 'Spring', 30, 30);
-insert into classes values  ('c0005', 'CS', 240, 1, 2014, 'Spring', 40, 39);
-insert into classes values  ('c0006', 'CS', 532, 1, 2014, 'Spring', 29, 28);
-insert into classes values  ('c0007', 'Math', 221, 1, 2014, 'Spring', 30, 30);
+insert into classes values  ('c0001', 'CS', 432, 1, 2014, 'Spring', 5, 0);
+insert into classes values  ('c0002', 'Math', 314, 1, 2013, 'Fall', 5, 0);
+insert into classes values  ('c0003', 'Math', 314, 2, 2013, 'Fall', 5, 0);
+insert into classes values  ('c0004', 'CS', 432, 1, 2013, 'Spring', 5, 0);
+insert into classes values  ('c0005', 'CS', 240, 1, 2014, 'Spring', 5, 0);
+insert into classes values  ('c0006', 'CS', 532, 1, 2014, 'Spring', 5, 0);
+insert into classes values  ('c0007', 'Math', 221, 1, 2014, 'Spring', 5, 0);
+insert into classes values  ('c0008', 'CS', 375, 1, 2014, 'Fall', 5, 0);
 
 insert into enrollments values  ('B001', 'c0001', 'A');
 insert into enrollments values  ('B002', 'c0002', 'B');
