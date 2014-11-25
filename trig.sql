@@ -27,7 +27,6 @@ begin
   end if;
 select user into myuser from dual;
 select sysdate into mytime from dual;
-dbms_output.put_line('User is: ' || myuser);
 insert into logs values(log_id.nextval,myuser,mytime,'students',log_action,mysid);
 end;
 /
