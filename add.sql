@@ -38,7 +38,7 @@ insert into classes values  ('c0005', 'CS', 240, 1, 2014, 'Spring', 5, 0);
 insert into classes values  ('c0006', 'CS', 532, 1, 2014, 'Spring', 5, 0);
 insert into classes values  ('c0007', 'Math', 221, 1, 2014, 'Spring', 5, 0);
 insert into classes values  ('c0008', 'CS', 375, 1, 2014, 'Fall', 5, 0);
-insert into classes values  ('c0008', 'CS', 140, 1, 2014, 'Fall', 5, 0);
+insert into classes values  ('c0009', 'CS', 140, 1, 2014, 'Fall', 5, 0);
 
 insert into enrollments values  ('B001', 'c0001', 'A');
 insert into enrollments values  ('B002', 'c0002', 'B');

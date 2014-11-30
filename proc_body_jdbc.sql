@@ -258,7 +258,7 @@ begin
 
     	temp_count := 0;
     	select count(*) into temp_count from dual where class_record.dept_code||class_record.course# in 
-    		(select dept_code||course# from classes cls,enrollments e where e.sid = in_sid);
+    		(select dept_code||course# from classes cls,enrollments e where e.sid = in_sid and e.classid = cls.classid);
     	if(temp_count = 1) then
     		raise course_already_taken;
     	end if;
