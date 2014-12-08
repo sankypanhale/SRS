@@ -125,7 +125,7 @@ begin
 	elsif(coursecount = 0) then
 		raise no_course;
 	end if;
-    open stu_cursor for select s.sid,s.firstname,c.dept_code,c.course#,c.title
+    open stu_cursor for select s.sid,s.firstname,c.dept_code||c.course# as course,c.title
 	from students s,enrollments e,classes cls,courses c
 	where s.sid = p_sid and
 	s.sid = e.sid and
