@@ -53,7 +53,8 @@ class_cursor out sys_refcursor);
 --procedure to enroll a student in a class
 procedure enroll_student
 (in_sid in students.sid%type,
-in_classid in classes.classid%type);
+in_classid in classes.classid%type,
+overloadcount out number);
 
 --procedure to drop a student from a class
 procedure drop_student

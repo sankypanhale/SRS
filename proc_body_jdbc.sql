@@ -186,7 +186,8 @@ end;
 --procedure to enroll a student in a class
 procedure enroll_student
 (in_sid in students.sid%type,
-in_classid in classes.classid%type)is
+in_classid in classes.classid%type,
+overloadcount out number)is
 
 -- all execptions added here
 invalid_sid exception;
@@ -201,7 +202,6 @@ course_already_taken exception;
 studentcount number;
 classcount number;
 enrollcount number;
-overloadcount number;
 
 --record type to hold row from classes table
 class_record classes%rowtype;
